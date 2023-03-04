@@ -1,0 +1,24 @@
+{
+    "collection": "users",
+    "database": "buddyDB",
+    "roles": [
+        {
+            "name": "ReadWriteOwn",
+            "apply_when": {},
+            "document_filters": {
+                "write": {
+                    "_id": {
+                        "%stringToOid": "%%user.id"
+                    }
+                },
+                "read": {
+                    "_id": {
+                        "%stringToOid": "%%user.id"
+                    }
+                }
+            },
+            "read": true,
+            "write": true
+        }
+    ]
+}

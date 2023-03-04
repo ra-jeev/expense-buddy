@@ -1,0 +1,21 @@
+{
+    "collection": "transactions",
+    "database": "buddyDB",
+    "roles": [
+        {
+            "name": "ReadWriteInsertOwn",
+            "apply_when": {},
+            "document_filters": {
+                "write": {
+                    "owner_id": "%%user.id"
+                },
+                "read": {
+                    "owner_id": "%%user.id"
+                }
+            },
+            "read": true,
+            "write": true,
+            "insert": true
+        }
+    ]
+}

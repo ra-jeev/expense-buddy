@@ -1,0 +1,16 @@
+{
+    "name": "monthChange",
+    "type": "SCHEDULED",
+    "config": {
+        "schedule": "0 0 1 * *",
+        "skip_catchup_events": false
+    },
+    "disabled": false,
+    "event_processors": {
+        "FUNCTION": {
+            "config": {
+                "function_name": "onNewMonth"
+            }
+        }
+    }
+}

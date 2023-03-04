@@ -1,0 +1,8 @@
+{
+    "app_id": "your_app_id",
+    "config_version": 20210101,
+    "name": "your_app_name",
+    "location": "US-VA",
+    "provider_region": "aws-us-east-1",
+    "deployment_model": "LOCAL"
+}

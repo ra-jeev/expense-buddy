@@ -1,0 +1,14 @@
+[
+    {
+        "name": "onNewUser",
+        "private": true
+    },
+    {
+        "name": "onNewTransaction",
+        "private": true
+    },
+    {
+        "name": "onNewMonth",
+        "private": true
+    }
+]
